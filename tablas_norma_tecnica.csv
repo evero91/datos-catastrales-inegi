@@ -1,5 +1,5 @@
 Tema,Atributo,Descripción,Contenido del campo,Tipo de campo,Formato,Obligatorio / opcional,Numero de caracteres,
-Identificación	del predio.,Cve_cat_est,Clave catastral estándar.,"Estado, región catastral, municipio, zona catastral, localidad, sector catastral, manzana, predio y condominio (edificio y unidad).",Alfanumérico,"De 31 caracteres de la siguiente manera: 
+Identificación del predio.,Cve_cat_est,Clave catastral estándar.,"Estado, región catastral, municipio, zona catastral, localidad, sector catastral, manzana, predio y condominio (edificio y unidad).",Alfanumérico,"De 31 caracteres de la siguiente manera: 
 2 Estado
 3 Regióncatastral
 3 Municipio
@@ -18,14 +18,14 @@ dd 1 a 31
 mm 1 a 12 
 Aaaa por ejemplo 1992 ",Obligatorio.,10,
 ,Folio_real,Código identificador que asigna el RPP al expediente electrónico y digital que se integra de un predio.,,Alfanumérico,Hasta 30 caracteres.,Obligatorio.,30,
-,CURT,Clave	Unica	del Registro del Territorio.,,Alfanumérico,34 caracteres iniciando con un guión y continuando con 33 dígitos.,Obligatorio.,34,
+,CURT,ClaveUnicadel Registro del Territorio.,,Alfanumérico,34 caracteres iniciando con un guión y continuando con 33 dígitos.,Obligatorio.,34,
 ,Tipo_tenencia,Tipo de tenencia.,Pública. Privada.,Alfanumérico,Hasta 7 caracteres.,Obligatorio.,7,
-,Clasif_tenencia,Clasificación	de	latenencia.,"Para la pública: Federal
+,Clasif_tenencia,Clasificacióndelatenencia.,"Para la pública: Federal
 EstatalMunicipal
 Para laprivada:Individual
 Condominio",Alfanumérico,Hasta 10 caracteres.,Obligatorio.,10,
-Ubicación	del predio.,Cve_ah,Clave del asentamiento humano.,Conforme al catálogo de asentamientos humanos que defina la propia entidad.,Alfanumérico,"De 4 caracteres, valores numéricos justificados con ceros a la izquierda.",Obligatorio	parapredios urbanos.,4,
-,Cve_vial,Clave de la vialidad.,Conforme al catálogo de vialidad que defina la propia entidad.,Alfanumérico,"De 5 caracteres, valores numéricos justificados con ceros a la izquierda.",Obligatorio	parapredios urbanos.,5,
+Ubicacióndel predio.,Cve_ah,Clave del asentamiento humano.,Conforme al catálogo de asentamientos humanos que defina la propia entidad.,Alfanumérico,"De 4 caracteres, valores numéricos justificados con ceros a la izquierda.",Obligatorioparapredios urbanos.,4,
+,Cve_vial,Clave de la vialidad.,Conforme al catálogo de vialidad que defina la propia entidad.,Alfanumérico,"De 5 caracteres, valores numéricos justificados con ceros a la izquierda.",Obligatorioparapredios urbanos.,5,
 ,Cve_ViaCom,Clave de la vía de comunicación.,Conforme al catálogo de vía de comunicación que defina la propia entidad.,Alfanumérico,"De 5 caracteres, valores numéricos justificados con ceros a la izquierda.",Opcional.,5,
 ,Carretera_tramo,Poblaciones origen- destino que limitan al tramo.,,Alfanumérico,Hasta 255 caracteres.,Opcional.,255,
 ,Carretera_cadena,Kilómetro en el que se ubica el domicilio del predio.,,Alfanumérico,Hasta 25 caracteres.,Opcional.,25,
@@ -33,23 +33,23 @@ Ubicación	del predio.,Cve_ah,Clave del asentamiento humano.,Conforme al catálo
 ,Camino_margen,Lado de la vía de comunicación donde se ubica el predio.,Derecho Izquierdo,Alfanumérico,Hasta 9 caracteres.,Opcional.,9,
 ,Camino_cadena,Kilómetro en el que se ubica el domicilio del predio cuando se conozca.,,Alfanumérico,Hasta 25 caracteres.,Opcional.,25,
 ,Numextnum,Número exterior.,"En caso de no existir la parte numérica, debe quedar el dato en blanco.",Numérico,Hasta 5 dígitos.,Opcional.,5,
-,Numextant,Número	exterior anterior.,,Alfanumérico,Hasta 10 caracteres.,Opcional.,10,
+,Numextant,Númeroexterior anterior.,,Alfanumérico,Hasta 10 caracteres.,Opcional.,10,
 ,Numextalf,Parte alfanumérica del número exterior.,"Cuando no exista dato en el atributo número exterior, en este atributo se debe registrar la leyenda “SN” (sin número).
 En caso de que se encuentre un domicilio geográfico denominado “domicilio conocido”, se debe registrar la siguiente leyenda “DOMICILIO CONOCIDO”.",Alfanumérico,Hasta 35 caracteres.,Opcional.,35,
 ,Edificio_nombre,"Nombre o número oficial del edificio, conforme a la normatividad vigente que regule los nombres geográficos, en su caso.",,Alfanumérico,Hasta 30 caracteres.,Opcional.,30,
 ,Nivel,Nivel.,"Planta baja, primer piso, segundo piso, …",Alfanumérico,Hasta 30 caracteres.,Opcional.,30,
 ,Numintnum,Número interior.,,Numérico,Hasta 5 dígitos.,Opcional.,5,
 ,Numintalf,Parte alfanumérica del número interior.,"Cuando no exista dato en el atributo número interior, en este atributo se debe registrar la leyenda “SN” (sin número).",Alfanumérico,Hasta 35 caracteres.,Opcional.,35,
-,CP,Código postal.,,Alfanumérico,"De 5 caracteres, valores numéricos justificados con ceros a la izquierda.",Obligatorio	para predios urbanos.,5,
-,Cve_vialref1,Clave de la vialidad que se ubica a la derecha del predio.,,Alfanumérico,"De 5 caracteres, valores numéricos justificados con ceros a la izquierda.",Obligatorio	parapredios urbanos.,5,
-,Cve_vialref2,Clave de la vialidad que se ubica a la izquierda del predio.,,Alfanumérico,"De 5 caracteres, valores numéricos justificados con ceros a la izquierda.",Obligatorio	parapredios urbanos.,5,
-,Cve_vialref3,Clave de la vialidad posterior a la ubicación del predio.,,Alfanumérico,"De 5 caracteres, valores numéricos justificados con ceros a la izquierda.",Obligatorio	parapredios urbanos.,5,
-,Descrubic,Descripción	deubicación.,En caso de no contener información se debe registrar la leyenda de “NINGUNO”.,Alfanumérico,Hasta 255 caracteres.,Opcional.,255,
+,CP,Código postal.,,Alfanumérico,"De 5 caracteres, valores numéricos justificados con ceros a la izquierda.",Obligatoriopara predios urbanos.,5,
+,Cve_vialref1,Clave de la vialidad que se ubica a la derecha del predio.,,Alfanumérico,"De 5 caracteres, valores numéricos justificados con ceros a la izquierda.",Obligatorioparapredios urbanos.,5,
+,Cve_vialref2,Clave de la vialidad que se ubica a la izquierda del predio.,,Alfanumérico,"De 5 caracteres, valores numéricos justificados con ceros a la izquierda.",Obligatorioparapredios urbanos.,5,
+,Cve_vialref3,Clave de la vialidad posterior a la ubicación del predio.,,Alfanumérico,"De 5 caracteres, valores numéricos justificados con ceros a la izquierda.",Obligatorioparapredios urbanos.,5,
+,Descrubic,Descripcióndeubicación.,En caso de no contener información se debe registrar la leyenda de “NINGUNO”.,Alfanumérico,Hasta 255 caracteres.,Opcional.,255,
 ,Factor_indiviso,"Factor de indiviso, en caso de condominios.",,Numérico,"Hasta 6 dígitos, 3 enteros y 2 decimales.",Opcional.,"3,2",
 ,Cent_pred_lat,Latitud del centro del predio.,,Alfanumérico,Hasta 20 caracteres.,Obligatorio.,20,
 ,Cent_pred_lon,Longitud del centro del predio.,,Alfanumérico,Hasta 20 caracteres.,Obligatorio.,20,
 ,Cartog_nom_div,Nomenclatura y división cartográfica.,Clave de la división cartográfica a la que corresponde el predio dependiendo de la escala.,Alfanumérico,Hasta 12 caracteres.,Obligatorio.,12,
-Datos del propietario.,Tot_prop_pos,"Total de propietarios, poseedores, usufructuarios,	o copropietarios que tienen derechoalpredio.","Los datos del propietario que tienen derecho al predio están definidos en el Catálogo de propietarios de predios privados y públicos, urbanos y rurales. La tabla de Tipos de Propietarios de predios privados y públicos, urbanos y rurales debe tener tanto registros como el número que se indique en este atributo.
+Datos del propietario.,Tot_prop_pos,"Total de propietarios, poseedores, usufructuarios,o copropietarios que tienen derechoalpredio.","Los datos del propietario que tienen derecho al predio están definidos en el Catálogo de propietarios de predios privados y públicos, urbanos y rurales. La tabla de Tipos de Propietarios de predios privados y públicos, urbanos y rurales debe tener tanto registros como el número que se indique en este atributo.
 El tipo de propietario que tiene derecho sobre el predio se especifica en la tabla Tipos de Propietarios de predios privados y públicos, urbanos y rurales.",Numérico,Hasta 4 dígitos.,Obligatorio.,4,
 Características del predio.,Ambito_predio,Ambito del predio.,"Urbano
 Rural",Alfanumérico,Hasta 6 caracteres.,Obligatorio.,6,
@@ -67,19 +67,18 @@ Administración pública Servicios urbanos Alojamiento Financieros
 Otro",Alfanumérico,Hasta 22 caracteres.,Opcional.,22,
 ,Desc_tipo_equip,Descripción de otro tipo de equipamiento.,,Alfanumérico,"Hasta 255 caracteres,
 separados por coma.",Opcional.,255,
-,Pred_serv_disponibles,Servicios	disponibles para el predio.,"Electricidad Agua potable Drenaje Teléfono
+,Pred_serv_disponibles,Serviciosdisponibles para el predio.,"Electricidad Agua potable Drenaje Teléfono
 Alumbrado público Pavimentación
 Sistemas de televisión privada (cable o antena)
 Gas natural Seguridad privada Internet
 Banqueta Guarnición
 Recolección o depósito de basura privado
 Transporte público Areas recreativas Areas comerciales Centros educativos Centros financieros
-Centros de salud",Alfanumérico,"Hasta 400 caracteres.
-Respuesta	múltiple.Separados porcomas.",Obligatorio.,400,
+Centros de salud",Alfanumérico,Hasta 400 caracteres.Respuestamúltiple.Separados porcomas.,Obligatorio.,400,
 ,Desc_serv_disponibles,Descripción de otros servicios disponibles para el predio.,,Alfanumérico,"Hasta 255 caracteres, separados por coma.",Opcional.,255,
 ,Pred_ubic_mzna,Ubicación del predio urbano dentro de la manzana.,"Esquina Intermedio Interior Manzanero Cabecera
 Callejón o cerrada",Alfanumérico,Hasta 18 caracteres.,Obligatorio en tipo de predio urbano.,18,
-,Pred_Forma,Forma	del	predio urbano.,"Regular
+,Pred_Forma,Formadelpredio urbano.,"Regular
 Irregular",Alfanumérico,Hasta 9 caracteres.,Obligatorio en tipo de predio urbano.,9,
 ,Pred_Frente,Medida del frente del predio urbano.,En metros lineales.,Numérico,Hasta 6 dígitos enteros y 2 decimales.,Obligatorio en tipo de predio urbano.,"6,2",
 ,Pred_Fondo,Medida del fondo del predio urbano.,En metros lineales.,Numérico,Hasta 6 dígitos enteros y 2 decimales.,Obligatorio en tipo de predio urbano.,"6,2",
@@ -91,7 +90,7 @@ Plano",Alfanumérico,Hasta 23 caracteres.,Obligatorio en tipo de predio rural.,2
 ,Dist_via_com,Distancia del predio rural a víasdecomunicación.,En km.,Numérico,Hasta 3 dígitos enteros y 2 decimales.,Obligatorio en tipo de predio rural.,"3,2",
 ,Nom_centro_urb,"Nombre oficial del centro urbano odeconsumo más cercano al predio rural, conforme a la normatividad vigente que regule los nombres geográficos.",,Alfanumérico,Hasta 255 caracteres.,Obligatorio en tipo de predio rural.,255,
 ,Dist_centro_urb,Distancia del centro urbano o de consumo más cercano al predio rural.,En km.,Numérico,Hasta 3 dígitos enteros y 2 decimales.,Obligatorio en tipo de predio rural.,"3,2",
-,Facilidad_comunic,Facilidades	decomunicación y de transporte al predio rural.,"Excelente Muy buena Buena Regular Nula
+,Facilidad_comunic,Facilidadesdecomunicación y de transporte al predio rural.,"Excelente Muy buena Buena Regular Nula
 Otra",Alfanumérico,Hasta 9 caracteres.,Obligatorio en tipo de predio rural.,9,
 ,Desc_facilcomunic,Descripción de otra apreciación de facilidad de comunicación y transporte al predio rural.,,Alfanumérico,Hasta 255 caracteres.,Opcional en tipo de predio rural.,255,
 ,Cond_agrologicas,Condiciones agrológicas de la región donde se ubica elpredio rural.,,Alfanumérico,Hasta 255 caracteres.,Obligatorio en tipo de predio rural.,255,
@@ -110,24 +109,14 @@ Este atributo aplica cuando el predio es condominio.",Numérico,Hasta 5 dígitos
 ,Sup_comun_urb,Superficie de terreno común del predio urbano.,"La superficie debe estar en m2.
 Este atributo aplica cuando el predio es condominio.",Numérico,Hasta 5 dígitos enteros y 2 decimales.,Opcional.,"5,2",
 ,Sup_construccion,Superficie total de la construcción en m2.,,Numérico,Hasta 5 dígitos enteros y 2 decimales.,Opcional.,"5,2",
-,Sup_constr_privat,Superficie	de	laconstrucciónprivativa.,"La superficie debe estar en m2.
+,Sup_constr_privat,Superficiedelaconstrucciónprivativa.,"La superficie debe estar en m2.
 Este atributo aplica cuando el predio es condominio.",Numérico,Hasta 5 dígitos enteros y 2 decimales.,Opcional.,"5,2",
-,Sup_constr_comun,Superficie	de	laconstruccióncomún.,"La superficie debe estar en m2.
+,Sup_constr_comun,Superficiedelaconstruccióncomún.,"La superficie debe estar en m2.
 Este atributo aplica cuando el predio es condominio.",Numérico,Hasta 5 dígitos enteros y 2 decimales.,Opcional.,"5,2",
 ,Valor_terreno,Valor catastral total del terreno en moneda nacional.,,Numérico,Hasta 8 dígitos enteros y 2 decimales.,Obligatorio.,"8,2",
 ,Valor_construccion,Valorcatastraltotaldela construcción enmoneda nacional.,,Numérico,Hasta 8 dígitos enteros y 2 decimales.,Opcional.,"8,2",
 ,Valor_operacion,Valor de operación del predio en moneda nacional.,,Numérico,Hasta 9 dígitos enteros y 2 decimales.,Obligatorio.,"9,2",
-Identificación	del predio.,Cve_cat_est,Clave	catastral estándar.,"Estado, región catastral, municipio, zona catastral, localidad, sector catastral, manzana, predio y condominio (edificio y unidad).",Alfanumérico,"De 31 caracteres de la siguiente manera:
-Estado
-Regióncatastral
-3 Municipio
-2 Zona catastral
-4 Localidad
-3 Sector catastral
-3Manzana
-Predio
-Condominio	(2Edificio y 4Unidad)
-Valoresnuméricosjustificados con cerosa laizquierda.",Obligatorio.,31,"Propiedad social, parcelas y tierras de uso común (Componente espacial)"
+Identificacióndel predio.,Cve_cat_est,Clavecatastral estándar.,"Estado, región catastral, municipio, zona catastral, localidad, sector catastral, manzana, predio y condominio (edificio y unidad).",Alfanumérico,De 31 caracteres de la siguiente manera:EstadoRegióncatastral3 Municipio2 Zona catastral4 Localidad3 Sector catastral3ManzanaPredioCondominio(2Edificio y 4Unidad)Valoresnuméricosjustificados con cerosa laizquierda.,Obligatorio.,31,"Propiedad social, parcelas y tierras de uso común (Componente espacial)"
 ,Cve_cat_ori,Clave catastral original asignada por el RAN.,,Alfanumérico,Hasta 30 caracteres,Obligatorio.,30,
 ,Tipo_pred_soc,Tipo de predio social.,"Parcela
 Tierras de uso común",Alfanumérico,Hasta 20 caracteres,Obligatorio.,20,
@@ -140,9 +129,9 @@ aaaaporejemplo1992.",Obligatorio.,10,
 ,Num_certificado,Número de certificado.,,Alfanumérico,Hasta 15 caracteres.,Obligatorio.,15,
 ,Folio_tierra,Folio que asigna el RAN al expediente que se integra por cada polígono de tierra de uso común.,,Alfanumérico,Hasta 15 caracteres.,Obligatorio si esunpredio de tierrasdeusocomún.,15,
 ,Folio_derechos,Folio que asigna el RAN al expediente que se integra porcadaparcela.,,Alfanumérico,Hasta 15 caracteres.,Obligatorio si es una parcela.,15,
-,CURT,Clave	Unica	del Registro delTerritorio.,,Alfanumérico,34 caracteres iniciando con un guión y continuando con 33 dígitos.,Obligatorio.,34,
-Ubicación	del predio.,Cve_na,Clave	de	núcleo agrario.,Conforme al catálogo de núcleos agrarios que maneja el RAN.,Alfanumérico,"De 3 caracteres, valores numéricos justificados con cerosa laizquierda.",Obligatorio.,3,
-,Num_pol,Número de polígono del núcleo	agrario correspondiente.,,Alfanumérico,"De 2 caracteres, valores numéricos justificados con cerosa laizquierda.",Obligatorio.,2,
+,CURT,ClaveUnicadel Registro delTerritorio.,,Alfanumérico,34 caracteres iniciando con un guión y continuando con 33 dígitos.,Obligatorio.,34,
+Ubicacióndel predio.,Cve_na,Clavedenúcleo agrario.,Conforme al catálogo de núcleos agrarios que maneja el RAN.,Alfanumérico,"De 3 caracteres, valores numéricos justificados con cerosa laizquierda.",Obligatorio.,3,
+,Num_pol,Número de polígono del núcleoagrario correspondiente.,,Alfanumérico,"De 2 caracteres, valores numéricos justificados con cerosa laizquierda.",Obligatorio.,2,
 ,Num_zona_tuc,Número de zona del polígono de tierras de uso común.,,Alfanumérico,"De 2 caracteres, valores numéricos justificados con cerosa laizquierda.",Obligatorio si esunpredio de tierrasdeusocomún.,2,
 ,Num_parcela,Número de parcela.,,Alfanumérico,"De 5 caracteres, valores numéricos justificados con cerosa laizquierda.",Obligatorio si es una parcela.,5,
 ,Cent_pred_lat,Latitud del centro del predio.,,Alfanumérico,Hasta 20 caracteres.,Obligatorio.,20,
@@ -164,16 +153,15 @@ Mixto.
 Otro. 
 Ninguno ",Alfanumérico,Hasta 15 caracteres.,Obligatorio.,15,
 ,Desc_uso_suelo,"Descripción de otro uso actual del suelo o usos de suelo que se incluyen en la opción
-mixto.",,Alfanumérico,"Hasta 255 caracteres, separados por coma.",Opcional.,,
-,Pred_serv_disponibles,Servicios	disponibles para el predio.,"Electricidad Agua potable Drenaje Teléfono.
+mixto.",,Alfanumérico,"Hasta 255 caracteres, separados por coma.",Opcional.,255,
+,Pred_serv_disponibles,Servicios disponibles para el predio.,"Electricidad Agua potable Drenaje Teléfono.
 Alumbrado público Pavimentación
 Sistemas de televisión privada (cable o antena)
 Gas natural Seguridad privada Internet
 Banqueta Guarnición
 Recolección o depósito de basura privado
 Transporte público Areas recreativas Areas comerciales Centros educativos Centros financieros Centros de salud
-Otro",Alfanumérico,"Hasta 400 caracteres.
-Respuesta	múltiple.Separados porcomas.",Obligatorio.,400,
+Otro",Alfanumérico,Hasta 400 caracteres.Respuestamúltiple.Separados porcomas.,Obligatorio.,400,
 ,Desc_serv_disponibles,Descripción de otros servicios disponibles para el predio.,,Alfanumérico,"Hasta 255 caracteres, separados por coma.",Opcional.,255,
 ,Pred_Forma,Forma del predio.,"Regular
 Irregular",Alfanumérico,Hasta 9 caracteres.,Obligatorio.,9,
@@ -182,7 +170,7 @@ Plano",Alfanumérico,Hasta 23 caracteres.,Obligatorio.,23,
 ,Dist_via_com,Distancia del predio a vías de comunicación.,En km.,Numérico,Hasta 3 dígitos enteros y 2 decimales.,Obligatorio.,"3,2",
 ,Nom_centro_urb,"Nombre oficial del centro urbano o de consumo más cercano al predio, conforme a la normatividad vigente que regule los nombres geográficos.",,Alfanumérico,Hasta 255 caracteres.,Obligatorio.,255,
 ,Dist_centro_urb,Distancia del centro urbano o de consumo más cercano al predio.,En km.,Numérico,Hasta 3 dígitos enteros y 2 decimales.,Obligatorio.,"3,2",
-,Facilidad_comunic,Facilidades	de comunicación y de transporte al predio.,"Excelente MuybuenaBuena Regular Nula
+,Facilidad_comunic,Facilidad de comunicación y de transporte al predio.,"Excelente Muy buena Buena Regular Nula
 Otra",Alfanumérico,Hasta 9 caracteres.,Obligatorio.,9,
 ,Desc_facilcomunic,Descripción de otra apreciación de facilidad de comunicación y transporte al predio.,,Alfanumérico,"Hasta 255 caracteres, separados por coma.",Opcional.,255,
 ,Cond_agrologicas,Condiciones agrológicas de la región donde se ubica el predio.,,Alfanumérico,Hasta 255 caracteres.,Obligatorio.,255,
@@ -193,8 +181,8 @@ Otra",Alfanumérico,Hasta 15 caracteres.,Obligatorio.,15,
 Erial
 MixtaOtra",Alfanumérico,Hasta 10 caracteres.,Obligatorio.,10,
 ,Desc_Clasetierra,Descripción de otra clase de tierra o clases de tierra que se incluyen en la opción mixta.,,Alfanumérico,"Hasta 255 caracteres, separados por coma.",Opcional.,255,
-,Sup_totalterreno,Superficie	total	del terreno del predio.,En Ha.,Numérico,Hasta 5 dígitos enteros y 2 decimales.,Obligatorio.,"5,2",
-Identificación	del predio.,Cve_cat_est,Clave	catastral estándar.,"Estado, región catastral, municipio, zona catastral, localidad, sector catastral, manzana, predio y condominio (edificio y unidad).",Alfanumérico,"De 31 caracteres dela siguientemanera:
+,Sup_totalterreno,Superficie total del terreno del predio.,En Ha.,Numérico,Hasta 5 dígitos enteros y 2 decimales.,Obligatorio.,"5,2",
+Identificación del predio. ,Cve_cat_est,Clave catastral estándar. ,"Estado, región catastral, municipio, zona catastral, localidad, sector catastral, manzana, predio y condominio (edificio y unidad).",Alfanumérico,"De 31 caracteres dela siguientemanera:
 Estado
 Regióncatastral
 3 Municipio
@@ -205,11 +193,11 @@ Regióncatastral
 Predio
 Condominio(2Edificio y 4Unidad)
 Valores numéricos justificados con ceros a la izquierda.",Obligatorio.,31,"Colindantes de predios privados y públicos, urbanos y rurales"
-Colindantes.,Col_orientacion,Orientación	del colindante del predio.,"Norte Noreste Este Sureste Sur Suroeste
+Colindantes.,Col_orientacion,Orientación del colindante del predio. ,"Norte Noreste Este Sureste Sur Suroeste
 Oeste
 Noroeste",Alfanumérico,Hasta 9 caracteres.,Obligatorio.,9,
-,Cve_prop_pos,"Clave única del propietario, poseedor o usufructuario	o copropietario.","Conforme al catálogo de propietarios de predios privados y públicos, urbanos y rurales.",Alfanumérico,"Consecutivo hasta 8 caracteres, valores numéricos justificados con ceros a la izquierda.",Obligatorio.,8,
-Identificación	delpredio.,Cve_cat_est,Clave	catastral estándar.,"Estado, región catastral, municipio, zona catastral, localidad, sector catastral, manzana, predio y condominio (edificio y unidad).",Alfanumérico,"De 31 caracteres de la siguiente manera:
+,Cve_prop_pos,"Clave única del propietario, poseedor o usufructuarioo copropietario.","Conforme al catálogo de propietarios de predios privados y públicos, urbanos y rurales.",Alfanumérico,"Consecutivo hasta 8 caracteres, valores numéricos justificados con ceros a la izquierda.",Obligatorio.,8,
+Identificación del predio. ,Cve_cat_est,Clave catastral estándar. ,"Estado, región catastral, municipio, zona catastral, localidad, sector catastral, manzana, predio y condominio (edificio y unidad).",Alfanumérico,"De 31 caracteres de la siguiente manera:
 Estado
 Regióncatastral
 3 Municipio
@@ -220,10 +208,32 @@ Regióncatastral
 Predio
 Condominio(2Edificio y 4Unidad)
 Valores numéricos justificados con ceros a la izquierda.",Obligatorio.,31,"Colindantes de predios de propiedad social, parcelas y tierras de uso común"
-Colindantes,Col_orientacion,Orientación	delcolindante delpredio.,"Norte Noreste Este Sureste Sur Suroeste Oeste
+Colindantes,Col_orientacion,Orientación del colindante del predio. ,"Norte Noreste Este Sureste Sur Suroeste Oeste
 Noroeste",Alfanumérico,Hasta 9 caracteres.,Obligatorio.,9,
-,Cve_prop_pos_s,"Clave única del propietario, poseedor o usufructuario	o copropietario.","Conforme al catálogo propietarios de propiedad social, parcelas y tierras de uso común.",Alfanumérico,"Consecutivo hasta 8 caracteres, valores numéricos justificados con ceros alaizquierda.",Obligatorio.,8,
-Identificación del propietario,Cve_cat_ori,Clave catastral original que asigna cada catastro.,,Alfanumérico,Hasta 30 caracteres.,Obligatorio.,30,"Tipos de propietarios de predios privados y públicos, urbanos y rurales (componente tabular)"
-,Cve_prop_pos,"Clave única del propietario, poseedor, usufructuario	o copropietarios.","Conforme al catálogo de predios urbanos y rurales, privados y publicos",Alfanumérico,"Consecutivo hasta 8 caracteres, valores numéricos justificado con ceros a la izquierda.",Obligatorio.,8,
-,Tipo_prop_pos,Tipo de propietario.,"Propietario PoseedorUsufructuario
+,Cve_prop_pos_s,"Clave única del propietario, poseedor o usufructuarioo copropietario.","Conforme al catálogo propietarios de propiedad social, parcelas y tierras de uso común.",Alfanumérico,"Consecutivo hasta 8 caracteres, valores numéricos justificados con ceros alaizquierda.",Obligatorio.,8,
+Identificación de propietarios,Cve_cat_ori,Clave catastral original que asigna cada catastro.,,Alfanumérico,Hasta 30 caracteres.,Obligatorio.,30,"Tipos de propietarios de predios privados y públicos, urbanos y rurales (componente tabular)"
+,Cve_prop_pos,"Clave única del propietario, poseedor, usufructuario o copropietarios.","Conforme al catálogo de predios urbanos y rurales, privados y publicos",Alfanumérico,"Consecutivo hasta 8 caracteres, valores numéricos justificado con ceros a la izquierda.",Obligatorio.,8,
+,Tipo_prop_pos,Tipo de propietario.,"Propietario Poseedor Usufructuario Copropietario
 Copropietario",Alfanumérico,Hasta 13 caracteres.,Obligatorio.,13,
+Identificaciónde propietarios.,Cve_cat_ori,Clave catastral original asignada por el RAN.,,Alfanumérico,Hasta 30 caracteres.,Obligatorio.,30,"Tipos de propietarios de propiedad social, parcelas y tierras de uso común (componente tabular)"
+,Cve_prop_pos_s,"Clave única del propietario, poseedor, usufructuarioo copropietarios.","Conforme al catálogo de propietarios de propiedad social, parcelas y tierras de uso común.",Alfanumérico,Consecutivo hasta 8 caracteres justificado con ceros a la izquierda.,Obligatorio.,8,
+,Tipo_prop_pos_s,Tipo de propietario.,"Propietario PoseedorUsufructuario
+Copropietario",Alfanumérico,Hasta 13 caracteres.,Obligatorio.,13,
+Datos del propietario.,Cve_prop_pos,"Clave única del propietario, poseedor o usufructuarioo copropietario.","Conforme al catálogo de propietarios de predios privados y públicos, urbanos y rurales.",Alfanumérico,"Consecutivo hasta 8 caracteres, valores numéricos justificados con ceros a la
+izquierda.",Obligatorio.,8,"Catálogo de propietarios de predios privados y públicos, urbanos y rurales (componente tabular)"
+,Prop_fisicomoral,Clase de propietario,"Física
+Moral",Alfanumérico,Hasta 6 caracteres.,Obligatorio.,6,
+,Nombre,Nombre(s) del propietario o razon social,"Considera el nombre del propietario, poseedor,usufructuario,copropietarios o en su caso larazón
+social.",Alfanumérico,Hasta 255 caracteres.,Obligatorio.,255,
+,Apellido_paterno,Apellido paterno.,"Apellido paterno del propietario,
+poseedor,usufructuarioocopropietarios.",Alfanumérico,Hasta 255 caracteres.,Obligatorio.,255,
+,Apellido_materno,Apellido materno.,"Apellido materno del propietario, poseedor,usufructuarioo
+copropietarios.",Alfanumérico,Hasta 255 caracteres.,Obligatorio.,255,
+,RFC,RegistroFederaldeContribuyentes.,"Este atributo aplica para personas físicas o morales.
+Incluir homoclave.
+Registro Federal de Contribuyentes delpropietario,poseedor,
+usufructuario, copropietarios o de la razón social.",Alfanumérico,De 13 caracteres.,Obligatorio.,13,
+,CURP,Clave Unica de Registro de Población.,"Sólo aplica para personas físicas.
+ClaveUnicadeRegistrodePoblación delpropietario,poseedor,
+usufructuario o copropietarios.",Alfanumérico,De 18 caracteres.,Obligatorio.,18,
+,,,,,,,,"Catálogo de propietarios de propiedad social, parcela o uso común (componente tabular)"
