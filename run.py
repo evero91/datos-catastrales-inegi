@@ -1,21 +1,23 @@
 import csv
 
 def nombre_sql(texto):
-    return texto.replace('á','a').replace('é','e').replace('í','i').replace('ó','o').replace('ú','u').replace('.','').replace(',','').replace('\t',' ')
+    return texto.replace('á','a').replace('é','e').replace('í','i').replace('ó','o').replace('ú','u').replace('.','').replace(',','')
 
 with open('tablas_norma_tecnica.csv') as csv_file:
     csv_reader = csv.reader(csv_file)
-    tabla = ""
-    campo = ""
-    descripcion = ""
-    tipo = ""
-    obligatorio = ""
-    tamano = ""
-    create_table = ""
-    n = 0
+    tabla = ''
+    _tabla = ''
+    campo = ''
+    descripcion = ''
+    tipo = ''
+    obligatorio = ''
+    tamano = ''
+    create_table = ''
+    comentario = ''
+    _comentario_tabla = ''
     
     for row in csv_reader:
-        tabla = '_'.join(nombre_sql(row[0].lower().strip()).split())
+        tabla = '_'.join(nombre_sql(row[0].lower().strip().replace('\t',' ')).split())
         campo = row[1].lower().replace('\t',' ').strip()
         descripcion = row[2].replace('\t',' ').strip()
         tipo = row[4].lower().strip()
@@ -23,13 +25,17 @@ with open('tablas_norma_tecnica.csv') as csv_file:
         tamano = row[7].strip()
 
         if tabla != '':
-            # QUITAR ULTIMA \n Y COMA
-            # CERRAR CREATE TABLE ) Y PONER ; \n
-            # ESCRIBIR CREATE TABLE EN ARCHIVO
-            print(create_table)
-            create_table = f'CREATE TABLE {tabla} (\n'
+            if create_table != '':
+                create_table = create_table[:-2] + '\n);\n\n' + comentario + '\n'
+            
+            create_table += f'CREATE TABLE {tabla} (\n'
 
-        # AGREGAR COLUMNA A CREATE TABLE
+            if row[8].strip() != '':
+                _comentario_tabla = row[8].strip()
+
+            comentario = f"COMMENT ON TABLE {tabla} IS '{_comentario_tabla}';\n"
+            _tabla = tabla
+
         if tipo.startswith('alfa'):
             create_table += f'{campo} VARCHAR({tamano})'
         elif tipo.startswith('num'):
@@ -44,7 +50,13 @@ with open('tablas_norma_tecnica.csv') as csv_file:
             create_table += ' NOT NULL'
             
         create_table += ',\n'
-        n += 1
+        comentario += f"COMMENT ON COLUMN {_tabla}.{campo} IS '{descripcion}';\n"
 
-        if n == 80:
-            exit()
+    create_table = create_table[:-2] + '\n);\n\n' + comentario + '\n'
+
+with open('create_table.sql', 'w', newline='', encoding='utf-8') as archivo:
+    archivo.write(create_table)
+    archivo.close()
+    print('Archivo create_table.sql creado')
+
+# print(create_table)

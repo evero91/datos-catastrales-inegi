@@ -1,4 +1,3 @@
-Tema,Atributo,Descripción,Contenido del campo,Tipo de campo,Formato,Obligatorio / opcional,Numero de caracteres,
 Identificación del predio.,Cve_cat_est,Clave catastral estándar.,"Estado, región catastral, municipio, zona catastral, localidad, sector catastral, manzana, predio y condominio (edificio y unidad).",Alfanumérico,"De 31 caracteres de la siguiente manera: 
 2 Estado
 3 Regióncatastral
@@ -223,17 +222,167 @@ Datos del propietario.,Cve_prop_pos,"Clave única del propietario, poseedor o us
 izquierda.",Obligatorio.,8,"Catálogo de propietarios de predios privados y públicos, urbanos y rurales (componente tabular)"
 ,Prop_fisicomoral,Clase de propietario,"Física
 Moral",Alfanumérico,Hasta 6 caracteres.,Obligatorio.,6,
-,Nombre,Nombre(s) del propietario o razon social,"Considera el nombre del propietario, poseedor,usufructuario,copropietarios o en su caso larazón
-social.",Alfanumérico,Hasta 255 caracteres.,Obligatorio.,255,
-,Apellido_paterno,Apellido paterno.,"Apellido paterno del propietario,
-poseedor,usufructuarioocopropietarios.",Alfanumérico,Hasta 255 caracteres.,Obligatorio.,255,
-,Apellido_materno,Apellido materno.,"Apellido materno del propietario, poseedor,usufructuarioo
+,Nombre,Nombre(s) del propietario o razon social,"Considera el nombre del propietario, poseedor,usufructuario,copropietarios o en su caso larazónsocial.",Alfanumérico,Hasta 255 caracteres.,Obligatorio.,255,
+,Apellido_paterno,Apellido paterno.,"Apellido paterno del propietario,poseedor,usufructuarioocopropietarios.",Alfanumérico,Hasta 255 caracteres.,Obligatorio.,255,
+,Apellido_materno,Apellido materno.,"Apellido materno del propietario, poseedor,usufructuarioocopropietarios.",Alfanumérico,Hasta 255 caracteres.,Obligatorio.,255,
+,RFC,RegistroFederaldeContribuyentes.,"Este atributo aplica para personas físicas o morales.Incluir homoclave.Registro Federal de Contribuyentes delpropietario,poseedor,usufructuario, copropietarios o de la razón social.",Alfanumérico,De 13 caracteres.,Obligatorio.,13,
+,CURP,Clave Unica de Registro de Población.,"Sólo aplica para personas físicas.ClaveUnicadeRegistrodePoblación delpropietario,poseedor,usufructuario o copropietarios.",Alfanumérico,De 18 caracteres.,Obligatorio.,18,
+Datos del propietario.,Cve_prop_pos_s,"Clave única del propietario, poseedor o usufructuarioo copropietario.","Conforme al catálogo de propietarios de propiedad social, parcelas y tierras de uso común.",Alfanumérico,"Consecutivo hasta 8 caracteres, valores numéricos justificados con ceros a la izquierda.",Obligatorio.,8,"Catálogo de propietarios de propiedad social, parcela o uso común (componente tabular)"
+,Prop_fisicomoral,Clase de propietario.,"Física
+Moral",Alfanumérico,Hasta 6 caracteres.,Obligatorio.,6,
+,Nombre,Nombre(s) del propietario o razon social,"Considera el nombre del propietario, poseedor,usufructuario, copropietarios o en su caso la razón
+Social.",Alfanumérico,Hasta 255 caracteres.,Obligatorio.,255,
+,Apellido_paterno,Apellido paterno.,"Apellido paterno del propietario, poseedor,usufructuarioo
 copropietarios.",Alfanumérico,Hasta 255 caracteres.,Obligatorio.,255,
-,RFC,RegistroFederaldeContribuyentes.,"Este atributo aplica para personas físicas o morales.
-Incluir homoclave.
-Registro Federal de Contribuyentes delpropietario,poseedor,
-usufructuario, copropietarios o de la razón social.",Alfanumérico,De 13 caracteres.,Obligatorio.,13,
+,Apellido_materno,Apellido materno.,"Apellido materno del propietario,
+poseedor,usufructuarioocopropietarios.",Alfanumérico,Hasta 255 caracteres.,Obligatorio.,255,
+,RFC,RegistroFederalde Contribuyentes.,"Este atributo aplica para personas físicas o morales.
+Incluir homoclave. Registro Federal de Contribuyentes del propietario, poseedor, usufructuario, copropietarios o de la razón social.",Alfanumérico,De 13 caracteres.,Obligatorio.,13,
 ,CURP,Clave Unica de Registro de Población.,"Sólo aplica para personas físicas.
-ClaveUnicadeRegistrodePoblación delpropietario,poseedor,
-usufructuario o copropietarios.",Alfanumérico,De 18 caracteres.,Obligatorio.,18,
-,,,,,,,,"Catálogo de propietarios de propiedad social, parcela o uso común (componente tabular)"
+Clave Unica de Registro de Población
+delpropietario,poseedor,usufructuario ocopropietarios.",Alfanumérico,De 18 caracteres.,Obligatorio.,18,
+Datosdela construccióndel predio urbano.,Cve_cat_est,Clavecatastral estándar.,"Estado, región catastral, municipio, zona catastral, localidad, sector catastral, manzana, predio y condominio (edificio y unidad).",Alfanumérico,"De 31 caracteres de la siguiente manera:
+Estado
+Regióncatastral
+3 Municipio
+2 Zona catastral
+4 Localidad
+3 Sector catastral
+3Manzana
+Predio
+Condominio (2Edificio
+y 4 Unidad)
+Valoresnuméricosjustificados con ceros a laizquierda.",Obligatorio.,31,Construcciones (Componente espacial)
+,Constr_ID,Número identificador que se asigna a cada bloque de construcción que exista dentro de un predio,,Numérico,De 3 dígitos.,Obligatorio.,3,
+,Constr_edad,Antigüedaddelaconstrucción enaños.,"De 0 a 10años
+De 11 a 20años
+De 21 años omás",Numérico,"De 1 dígito, del 1 al 3.",Obligatorio.,1,
+,Constr_grado_term,Característica dada en función del grado de avance en la edificación.,"Inconclusa
+Terminada o edificada En proceso
+Otro",Alfanumérico,Hasta 21 caracteres.,Obligatorio.,21,
+,Desc_constr_term,Descripción de otro grado de terminación de la construcción.,,Alfanumérico,"Hasta 255 caracteres, separados por coma.",Opcional.,255,
+,Constr_disponibilidad,Característica dada en función de la ocupación.,"Ocupada
+Desocupada",Alfanumérico,Hasta 10 caracteres.,Obligatorio.,10,
+,Constr_conservacion,Calificación del estado físico en la que se encuentra la edificación.,"Buena Regular Mala
+Otra",Alfanumérico,Hasta 7 caracteres.,Obligatorio.,7,
+,Desc_constr_conser,Descripción de otro estado de conservación de la construcción.,,Alfanumérico,"Hasta 255 caracteres, separados por coma.",Opcional.,255,
+,Constr_num_niveles,Cantidad de pisos con que cuenta la edificación.,,Numérico,"De 2 dígitos, del 1 al 99.",Obligatorio.,2,
+,Constr_tipo_viv,Clasificación a utilizar en las edificaciones con destin o habitacional.,"Interés social Media
+Residencial",Alfanumérico,Hasta 14 caracteres,Obligatorio.,14,
+Identificación de la manzana.,Cve_ent,Clave del estado.,"Conforme al Catálogo Unico de Claves de Entidades Federativas, Municipios y Localidades que maneja el INEGI.",Alfanumérico,"De 2 caracteres, valores 01 al 32.",Obligatorio.,2,Manzana (Componente espacial)
+,Cve_region,Clavederegión catastral.,Conforme al catálogo de regiones catastrales que defina la propia entidad.,Alfanumérico,"De 3 caracteres,valores numéricos justificados con ceros a laizquierda.",Obligatorio.,3,
+,Cve_mun,Clave del municipio.,"Conforme al Catálogo Unico de Claves de Entidades Federativas, Municipios y Localidades que maneja el INEGI.",Alfanumérico,"De 3 caracteres,valores numéricos justificados con ceros a laizquierda.",Obligatorio.,3,
+,Cve_zona_cat,Clavedelazona catastral.,Conforme al catálogo de zonas catastrales que defina la propia entidad.,Alfanumérico,"De 2 caracteres,valores numéricos justificados con ceros a laizquierda.",Obligatorio.,2,
+,Cve_loc,Clave de la localidad.,"Conforme al Catálogo Unico de Claves de Entidades Federativas, Municipios y Localidades quemaneja el INEGI.",Alfanumérico,"De 4 caracteres,valores numéricos justificados con ceros a laizquierda.",Obligatorio.,4,
+,Cve_sector,Clavedelsector catastral.,Conforme al catálogo de sectores catastrales que defina la propia entidad.,Alfanumérico,"De 3 caracteres,valores numéricos justificados con ceros a laizquierda.",Obligatorio.,3,
+,Cve_ah,Clave del asentamiento humano.,"Conformealcatálogode asentamientos humanos que defina
+la propia entidad.",Alfanumérico,"De 4 caracteres,valores numéricosjustificados
+con ceros a laizquierda.",Obligatorio.,4,
+,Cve_mzna,Clave de manzana.,Conforme al catálogo de manzanas que defina la propia entidad.,Alfanumérico,"De 3 caracteres,valores numéricos justificados con ceros a laizquierda",Obligatorio.,3,
+,Cartog_nom_div,Nomenclatura y división cartográfica.,Clave de la división cartográfica a la que correspon de la manzana dependiendo de la escala.,Alfanumérico,Hasta 12 caracteres.,Obligatorio.,12,
+Identificador único.,Cve_ent,Clave del estado.,"Conforme al Catálogo Unico de Claves de Entidades Federativas, Municipios y Localidades que maneja el INEGI.",Alfanumérico,"De2caracteres,
+valores 01 al 32.",Obligatorio.,2,Estados (Catálogo y componente espacial)
+,Nom_ent,Nombreoficialdel estado.,"Conforme al Catálogo Unico de Claves de Entidades Federativas, Municipios y Localidades que maneja el INEGI y a la normatividad vigente que regule los nombres geográficos.",Alfanumérico,Hasta 255 caracteres.,Obligatorio.,255,
+Identificador único.,Cve_ent,Clave del estado.,"Conforme al Catálogo Unico de Claves de Entidades Federativas, Municipios y Localidades que maneja el INEGI.",Alfanumérico,"De2caracteres,
+valores 01 al 32.",Obligatorio.,2,Municipios (Catálogo y componente espacial)
+,Cve_mun,Clave del municipio.,"Conforme al Catálogo Unico de Claves de Entidades Federativas, Municipios y Localidades que maneja el INEGI.",Alfanumérico,"De 3 caracteres, valores numéricos justificados con ceros a la izquierda.",Obligatorio.,3,
+,Nom_mun,Nombreoficialdelmunicipio.,"Conforme al Catálogo Unico de Claves de Entidades Federativas, Municipios y Localidades que maneja el INEGI y a la normatividad vigente que regule los nombresgeográficos.",Alfanumérico,Hasta 255 caracteres.,Obligatorio.,255,
+Identificador único.,Cve_ent,Clave del estado.,"Conforme al Catálogo Unico de Claves de Entidades Federativas, Municipios y Localidades que maneja el INEGI.",Alfanumérico,"De2caracteres,
+valores 01 al 32.",Obligatorio.,2,Localidades (Catálogo y componente espacial)
+,Cve_mun,Clave del municipio.,"Conforme al Catálogo Unico de Claves de Entidades Federativas, Municipios y Localidades que maneja el INEGI.",Alfanumérico,"De 3 caracteres, valores numéricos justificados con ceros a laizquierda.",Obligatorio.,3,
+,Cve_loc,Clave de la localidad.,"Conforme   al   Catálogo   Unicode
+Claves   de   EntidadesFederativas, Municipios y Localidades que maneja el INEGI. ",Alfanumérico,"De4caracteres,
+valoresnuméricos",Obligatorio.,4,
+,Nom_loc,Nombre oficial de la localidad.,"Conforme al Catálogo Unico de Claves de Entidades Federativas, Municipios y Localidades quemaneja el INEGI y a la normatividad vigente que regule los nombres geográficos.",Alfanumérico,Hasta 255 caracteres.,Obligatorio.,255,
+Identificador único.,Cve_ent,Clave del estado.,"Conforme al Catálogo Unico de ClavesdeEntidades Federativas, Municipios y Localidades que maneja el INEGI.",Alfanumérico,"De2caracteres,
+valores 01 al 32.",Obligatorio.,2,Asentamientos Humanos (Catálogo y componente espacial)
+,Cve_region,Clavedelaregión catastral.,Conforme al catálogo de regiones catastrales que defina la propiaentidad.,Alfanumérico,"De 3 caracteres, valores numéricos justificados con ceros a
+la izquierda.",Obligatorio.,3,
+,Cve_mun,Clave del municipio.,"Conforme al Catálogo Unico de ClavesdeEntidadesFederativas, Municipios y Localidades que maneja el INEGI.",Alfanumérico,"De 3 caracteres, valores numéricos justificados con ceros a la izquierda.",Obligatorio.,3,
+,Cve_zona_cat,Clavedelazona catastral.,Conforme al catálogo de zonas catastrales que defina la propia entidad.,Alfanumérico,"De 2 caracteres, valores numéricos justificados con ceros a
+la izquierda.",Obligatorio.,2,
+,Cve_loc,Clave de la localidad.,"Conforme al Catálogo Unico de ClavesdeEntidadesFederativas, Municipios y Localidades que maneja el
+INEGI.",Alfanumérico,"De 4 caracteres, valores numéricos justificados con ceros a laizquierda.",Obligatorio.,4,
+,Cve_sector,Clavedelsector catastral.,Conforme al catálogo de sector es catastrales que de fin a la propia entidad.,Alfanumérico,"De 3 caracteres, valores numéricos justificados con cerosa
+la izquierda.",Obligatorio.,3,
+,Cve_ah,Clave del asentamiento humano.,Conforme al catálogo de asentamientos humanos que defina la propia entidad.,Alfanumérico,"De 4 caracteres, valores numéricos justificados con cerosa
+la izquierda.",Obligatorio.,4,
+,Tipoasen,Tipo del asentamiento humano.,"Conformealasiguiente clasificación:
+Aeropuerto Ampliación Barrio Cantón Ciudad
+Ciudad industrial Colonia Condominio
+Conjunto habitacional Corredor industrial Coto
+Cuartel Ejido Exhacienda Fracción
+FraccionamientoGranja Hacienda Ingenio Manzana
+Paraje
+ParqueindustrialPrivada Prolongación Pueblo
+Puerto
+Ranchería Rancho Región Residencial Rinconada Sección Sector Supermanzana Unidad Unidad habitacional Villa Zona federal Zona industrial Zona militar Zona naval Ninguno",Alfanumérico,Hasta 21 caracteres.,Obligatorio.,21,
+,Nomasen,"Nombre oficial del asentamiento humano, conforme a la normatividad vigente que regule los nombres geográficos.","En caso de no contar con un nombre, se debe registrar la leyenda “NINGUNO”.",Alfanumérico,Hasta 255 caracteres.,Obligatorio.,255,
+Identificador único.,Cve_ent,Clave del estado.,"Conforme al Catálogo Unico de Clavesde Entidades Federativas, Municipios y Localidades que maneja el INEGI.",Alfanumérico,"De2caracteres,
+valores 01 al 32.",Obligatorio.,2,Vialidades (Componente espacial)
+,Cve_region,Clave de la region catastral,Conforme al catálogo de regiones catastrales que defina la propia entidad.,Alfanumérico,"De 3 caracteres, valores numéricos justificados con ceros a la izquierda.",Obligatorio.,3,
+,Cve_mun,Clave del municipio.,"Conforme al Catálogo Unico de ClavesdeEntidades
+Federativas,Municipiosy Localidades que maneja el INEGI",Alfanumérico,"De3 valores caracteres, numéricos ",Obligatorio.,3,
+,Cve_zona_cat,Clave de la zona catastral,Conforme al catálogo de zonas catastrales que defina la propia entidad.,Alfanumérico,"De 2 caracteres, valores numéricos justificados con ceros a la izquierda.",Obligatorio.,2,
+,Cve_loc,Clave de la localidad.,"Conforme al Catálogo Unico de ClavesdeEntidades Federativas, Municipios y Localidades que maneja el INEGI.",Alfanumérico,"De 4 caracteres, valores numéricos justificados con ceros a la izquierda.",Obligatorio.,4,
+,Cve_sector,Clave de sector catastral,Conforme al catálogo de sectores catastrales que defina la propia entidad.,Alfanumérico,"De 3 caracteres, valores numéricos justificados con ceros a la izquierda.",Obligatorio.,3,
+,Cve_vial,Clave de la vialidad.,Conforme al catálogo de vialidades que defina la propia entidad.,Alfanumérico,"De 5 caracteres, valores numéricos justificados con ceros a la izquierda.",Obligatorio.,5,
+,Tipovial,Tipo de vialidad.,Conforme a la clasificación: Ampliación Andador Avenida Boulevard Calle Callejón Calzada Cerrada Circuito Circunvalación Continuación Corredor Diagonal Eje vial Pasaje Peatonal Periférico Privada Prolongación Retorno Viaducto Ninguno,Alfanumérico,Hasta 14 caracteres.,Obligatorio.,14,
+,Nomvial,"Nombre oficial de la vialidad, conforme a la normatividad vigente que regule los nombres geográficos.",Cuando el atributo carece de valor se capturará el texto “NINGUNO”.,Alfanumérico,Hasta 255 caracteres.,Obligatorio.,255,
+,Categoria_vial,Categoría de la vialidad.,"Primaria Secundaria Local
+Peatonal",Alfanumérico,Hasta 10 caracteres.,Obligatorio.,10,
+Identificacióndenúcleosagrarios.,Cve_ent,Clave del estado a donde pertenece el núcleo agrario.,"Conforme al Catálogo Unico de Claves de Entidades Federativas, Municipios y Localidades que maneja el INEGI.",Alfanumérico,"De2caracteres,
+valores 01 al 32.",Obligatorio.,2,Núcleos Agrarios (Catálogo y componente espacial)
+,Cve_mun,Clave del municipio o delegación a donde pertenece el núcleo agrario.,"Conforme al Catálogo Unico de Claves de Entidades Federativas, Municipios y Localidades que maneja el INEGI.",Alfanumérico,"De 3 caracteres, valores numéricos justificados con ceros a la izquierda.",Obligatorio.,3,
+,Cve_na,Clave de núcleo agrario.,Conforme al catálogo de núcleos agrarios que maneja el RAN.,Alfanumérico,"De 3 caracteres, valores numéricos justificados con ceros a la izquierda.",Obligatorio.,3,
+,Nom_na,"Nombre oficial del núcleoagrario,
+conforme alanormatividadvigenteque regule los nombres geográficos.",,Alfanumérico,Hasta 255 caracteres.,Obligatorio.,255,
+,Cartog_nom_div,Nomenclatura y división cartográfica,Clave de la división cartográfica a la que corresponde el núcleo agrario dependiendo de la escala,Alfanumérico,Hasta 12 caracteres.,Obligatorio.,12,
+,Tipo_na,Tipo de núcleo agrario.,"Ejido = E
+Comunidad agraria = C",Alfanumérico,De 1 carácter.,Obligatorio.,1,
+,Numtot_pol_na,Número total de polígonos ejidales o comunalesque conforman el núcleo agrario.,,Alfanumérico,"De 3 caracteres, valores numéricos justificados con ceros a la izquierda.",Obligatorio.,3,
+,Numtot_loc_na,Número total de localidades del núcleo agrario.,,Alfanumérico,"De 3 caracteres, valores numéricos justificados con ceros a la izquierda.",Obligatorio.,3,
+,Numtot_pol_loc_na,Número total de polígonos de localidades dentro del núcleo agrario.,,Alfanumérico,"De 2 caracteres, valores numéricos justificados con ceros a la izquierda.",Obligatorio.,2,
+,Num_pol_tuc_na,Número de polígonos de tierras de uso común dentro del núcleo agrario.,,Alfanumérico,"De 2 caracteres, valores numéricos justificados con ceros a la izquierda.",Obligatorio.,2,
+,Num_pol_ap_na,Número de polígonos de áreas parceladas dentro del núcleo agrario.,,Alfanumérico,"De 2 caracteres, valores numéricos justificados con ceros a la izquierda.",Obligatorio.,2,
+,CURT_na,Clave Unica del Registro del Territorio del núcleo agrario.,,Alfanumérico,34 caracteres iniciando con un guión y continuando con 33 dígitos.,Obligatorio.,34,
+,Sup_na,Superficietotaldel núcleo agrario.,En Ha.,Numérico,"Hasta 10 dígitos, 6 enteros y 3 decimales.",Obligatorio.,"6,3",
+"Identificación delos ríos, arroyos y cuerpos deagua.",Cve_ent_RAyCA,Clave del estado.,,Alfanumérico,"De 2 caracteres, valores 01 al 32.",Obligatorio.,2,"Ríos, Arroyos y Cuerpos de Agua (Componente espacial)"
+,Cve_mun_RAyCA,Clave del municipio o delegación.,,Alfanumérico,"De 3 caracteres,valores numéricos justificados con ceros a laizquierda.",Obligatorio.,3,
+,Tipo_ RAyCA,"Tipo de río, arroyo o cuerpo de agua","Conforme a la siguiente clasificacion:
+Acueducto
+Arroyo
+Bordo Canal Estero Lago LagunaManantialPresa Río Otro",Alfanumérico,Hasta 9 caracteres.,Obligatorio.,9,
+,Desc_ Tipo_ RAyCA,"Descripción de otro tipo de río, arroyo o cuerpo de agua",,Alfanumérico,"Hasta 255 caracteres,
+separados por coma.",Opcional.,255,
+,Nom _RAyCA,"Nombre oficial del río, arroyoo cuerpo de agua, conforme a la normatividad vigente que regule los nombres geográficos.",,Alfanumérico,Hasta 255 caracteres.,Obligatorio.,255,
+Identificación de las vías de comunicación terrestre.,Cve_ent,Clave del estado.,"Conforme al Catálogo Unico de Claves de Entidades Federativas, Municipios y Localidades que maneja el INEGI.",Alfanumérico,"De 2 caracteres, valores 01 al 32.",Obligatorio.,2,Vías de comunicación terrestre (transporte y férreas) (Componente espacial)
+,Cve_mun,Clave del municipio o delegación.,"Conforme al Catálogo Unico de Claves de Entidades Federativas, Municipios y Localidades que maneja el INEGI.",Alfanumérico,"De 3 caracteres, valores numéricos justificados con ceros a la izquierda.",Obligatorio.,3,
+,Cve_ViaCom,Clave de la vía de comunicación.,Conforme al catálogo de vía de comunicación que defina la propia entidad.,Alfanumérico,"De 5 caracteres, valores numéricos justificados con ceros a la izquierda.",Obligatorio.,5,
+,ViaCom_term_gen,Término genérico de la vía de comunicación.,"Carretera
+Camino Terracería Brecha Vereda
+Vía férrea",Alfanumérico,Hasta 10 caracteres.,Obligatorio.,10,
+,ViaCom_admon,Tipo de administración de la carretera.,"Federal
+Estatal Municipal
+Particular",Alfanumérico,Hasta 10 caracteres.,Obligatorio cuando eltérmino genérico es carretera.,10,
+,ViaCom_der_trans,Derecho de tránsito.,"Cuota
+Libre",Alfanumérico,Hasta 5 caracteres.,"Obligatorio cuando eltérmino
+genéricoes carretera.",5,
+,ViaCom_codigo,Número de la carretera.,,Numérico,De 3 dígitos.,"Obligatorio cuando eltérmino
+genéricoes carretera.",3,
+,ViaCom_nom,"Nombre oficial de la vía decomunicación,conformeala normatividad vigente que regule los nombres geográficos.",,Alfanumérico,Hasta 255 caracteres.,Obligatorio.,255,
+,Cve_ent,Clave del estado.,"Conforme al Catálogo Unico de Claves de Entidades Federativas, Municipios y Localidades que maneja el INEGI.",Alfanumérico,"De 2 caracteres, valores 01 al 32.",Obligatorio.,2,Región catastral (Catálogo y componente espacial)
+,Cve_region,Clave de la region catastral,Conforme al catálogo de regiones catastrales que defina la propia entidad.,Alfanumérico,"De 3 caracteres, valores numéricos justificados con ceros a la izquierda.",Obligatorio.,3,
+,Nom_region,Nombre de la region catastral,"En aquellas entidades dondeno haya denominación establecida para el nombre de la región catastral, el nombre de ésta será igual a laclave.",Alfanumérico,Hasta 255 caracteres.,Obligatorio.,255,
+,Cve_ent,Clave del estado.,"Conforme al Catálogo Unico de Claves de Entidades Federativas, Municipios y Localidades que maneja el INEGI.",Alfanumérico,"De 2 caracteres, valores 01 al 32.",Obligatorio.,2,Zona catastral (Catálogo y componente espacial)
+,Cve_region,Clavedelaregiónc atastral.,Conforme al catálogo de regiones catastrales que defina la propia entidad.,Alfanumérico,"De 3 caracteres, valores numéricos justificados con ceros a la izquierda.",Obligatorio.,3,
+,Cve_mun,Clave del municipio o delegación.,"Conforme al Catálogo Unico de Claves de Entidades Federativas, Municipios y Localidades que maneja el INEGI.",Alfanumérico,"De 3 caracteres, valores numéricos justificados con ceros a la izquierda.",Obligatorio.,3,
+,Cve_zona_cat,Clave de la zona catastral a la que pertenece el predio.,Conforme al catálogo de zonas catastrales que defina la propia entidad.,Alfanumérico,"De 2 caracteres, valores numéricos justificados con ceros a la izquierda.",Obligatorio.,2,
+,Nom_zona_cat,Nombredelazona catastral.,"En aquellas entidades dondeno haya denominación establecida para el nombre de la zona catastral,elnombredeéstaserá igual a laclave.",Alfanumérico,Hasta 255 caracteres.,Obligatorio.,255,
+,Cve_ent,Clave del estado.,"Conforme al Catálogo Unico de Claves de Entidades Federativas, Municipios y Localidades que maneja el INEGI.",Alfanumérico,"De 2 caracteres, valores 01 al 32.",Obligatorio.,2,Sector catastral (Catálogo y componente espacial)
+,Cve_region,Clavedelaregión catastral.,Conforme al catálogo de regiones catastrales que defina la propia entidad.,Alfanumérico,"De 3 caracteres, valores numéricos justificados con ceros a la izquierda.",Obligatorio.,3,
+,Cve_mun,Clave del municipio o delegación.,"Conforme al Catálogo Unico de Claves de Entidades Federativas, Municipios y Localidades que maneja el INEGI.",Alfanumérico,"De 3 caracteres, valores numéricos justificados con ceros a la izquierda.",Obligatorio.,3,
+,Cve_zona_cat,Clavedelazona catastral.,Conforme al catálogo de zonas catastrales que defina la propia entidad.,Alfanumérico,"De 2 caracteres, valores numéricos justificados con ceros a la izquierda.",Obligatorio.,2,
+,Cve_loc,Clave de la localidad.,"Conforme al Catálogo Unico de Claves de Entidades Federativas, Municipios y Localidades que maneja el INEGI.",Alfanumérico,"De 4 caracteres, valores numéricos justificados con ceros a la izquierda.",Obligatorio.,4,
+,Cve_sector,Clave del sector catastral.,Conforme al catálogo de sectores catastrales que defina la propia entidad.,Alfanumérico,"De 3 caracteres, valores numéricos justificados con ceros a la izquierda.",Obligatorio.,3,
+,Nom_sector,Nombredelsector catastral.,"En aquellas entidades dondeno haya denominación establecida para el nombre del sector catastral, el nombre de éste será igual a laclave.",Alfanumérico,Hasta 255 caracteres,Obligatorio,255,
